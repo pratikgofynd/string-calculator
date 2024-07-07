@@ -34,6 +34,7 @@ npm test
 
 This will execute all the tests defined in the `__test__` directory using the Jest testing framework.
 
-Project Structure
-`stringCalculator.js`: Contains the implementation of the String Calculator.
-`__test__/stringCalculator.test.js`: Contains the test cases for the String Calculator.
+### Project Structure
+
+- `stringCalculator.js`: Contains the implementation of the String Calculator.
+- `__test__/stringCalculator.test.js`: Contains the test cases for the String Calculator.

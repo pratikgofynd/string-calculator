@@ -39,3 +39,11 @@ test("return sum when input contains only new lines as delimiters", () => {
 test("ignores numbers greater than 1000", () => {
   expect(add("2,1001")).toBe(2);
 });
+
+test("return sum when input has different length delimiters", () => {
+  expect(add("//[***]\n1***2***3")).toBe(6);
+});
+
+test("returns the sum when input has multiple delimiters with length longer than one char", () => {
+  expect(add("//[**][%%]\n1**2%%3")).toBe(6);
+});

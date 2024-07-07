@@ -9,6 +9,10 @@ function add(numbers) {
     numbers = parts[1];
   }
   const nums = numbers.split(delimiter);
+  const negatives = nums.filter((num) => parseInt(num) < 0);
+  if (negatives.length > 0) {
+    throw new Error(`negative numbers not allowed ${negatives.join(",")}`);
+  }
   return nums.reduce((sum, num) => {
     return sum + parseInt(num);
   }, 0);

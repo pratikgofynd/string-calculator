@@ -13,9 +13,11 @@ function add(numbers) {
   if (negatives.length > 0) {
     throw new Error(`negative numbers not allowed ${negatives.join(",")}`);
   }
-  return nums.reduce((sum, num) => {
-    return sum + parseInt(num);
-  }, 0);
+  return nums
+    .filter((num) => num <= 1000)
+    .reduce((sum, num) => {
+      return sum + parseInt(num);
+    }, 0);
 }
 
 export default add;

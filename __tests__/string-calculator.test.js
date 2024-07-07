@@ -12,6 +12,10 @@ test("return sum of two number", () => {
   expect(add("1,2")).toBe(3);
 });
 
-test("return the sum of multiple numbers", () => {
+test("return sum of multiple numbers", () => {
   expect(add("1,2,3,4")).toBe(10);
+});
+
+test("return sum of numbers separated by commas along with new lines", () => {
+  expect(add("1\n2,3")).toBe(6);
 });

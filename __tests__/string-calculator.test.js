@@ -21,5 +21,5 @@ test("return sum of numbers separated by commas along with new lines", () => {
 });
 
 test("return sum of numbers with a custom delimiter", () => {
-  expect(add("$;\n1;2")).toBe(3);
+  expect(add("//;\n1;2")).toBe(3);
 });
